@@ -1,0 +1,15 @@
+﻿.card {
+  width: min(100%, 420px);
+  overflow: hidden;
+  box-shadow: 0 16px 32px rgba(15, 23, 42, 0.08);
+}
+
+.card :global(img) {
+  background: linear-gradient(180deg, #dbeafe 0%, #bfdbfe 100%);
+}
+
+@media (max-width: 768px) {
+  .card {
+    width: 100%;
+  }
+}

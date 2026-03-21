@@ -1,0 +1,41 @@
+﻿.page {
+  min-height: 100vh;
+  padding: 32px 16px 48px;
+}
+
+.shell {
+  width: min(100%, 920px);
+  margin: 0 auto;
+}
+
+.hero {
+  padding: 8px 0 4px;
+}
+
+.title {
+  margin: 0;
+  font-size: 32px;
+  line-height: 1.1;
+}
+
+.lead {
+  margin: 10px 0 0;
+  max-width: 560px;
+  color: #475569;
+}
+
+.list {
+  display: grid;
+  gap: 16px;
+  justify-items: center;
+}
+
+@media (max-width: 768px) {
+  .page {
+    padding: 20px 12px 32px;
+  }
+
+  .title {
+    font-size: 26px;
+  }
+}
