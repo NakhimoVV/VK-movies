@@ -1,0 +1,71 @@
+.form {
+  display: grid;
+  gap: 12px;
+}
+
+.primaryRow {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 12px;
+}
+
+.search {
+  width: 100%;
+}
+
+.submit {
+  width: fit-content;
+}
+
+.mobileSubmit {
+  display: none;
+}
+
+.filtersRow {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.field {
+  width: 100%;
+}
+
+.hero .primaryRow {
+  grid-template-columns: 1fr;
+}
+
+.hero .submit {
+  display: none;
+}
+
+.hero .mobileSubmit {
+  display: inline-flex;
+  justify-self: center;
+  min-width: 180px;
+}
+
+.toolbar .mobileSubmit {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .primaryRow,
+  .filtersRow {
+    grid-template-columns: 1fr;
+  }
+
+  .submit {
+    display: none;
+  }
+
+  .mobileSubmit {
+    display: inline-flex;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .hero .mobileSubmit {
+    width: 100%;
+  }
+}

@@ -1,0 +1,51 @@
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  font-size: 14px;
+  font-family: var(--font-manrope), sans-serif;
+  font-weight: 400;
+
+  color: var(--color-grey-60);
+  background-color: var(--color-black-08);
+}
+
+main {
+  flex-grow: 1;
+}
+
+input[type="search"]::-webkit-search-cancel-button {
+  appearance: none;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  margin-left: 10px;
+  margin-right: 46px;
+}
+
+a,
+button,
+label,
+input,
+textarea,
+select,
+svg * {
+  transition-duration: var(--transition-duration);
+}
+
+a {
+  font-weight: 500;
+  color: inherit;
+
+  @include hover {
+    color: var(--color-red-45);
+  }
+
+  &[class] {
+    text-decoration: none;
+  }
+}
+
+:focus-visible {
+  @include focus-visible;
+}

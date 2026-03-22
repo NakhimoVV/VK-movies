@@ -1,8 +1,0 @@
-<svg width="720" height="960" viewBox="0 0 720 960" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <rect width="720" height="960" fill="#07111F"/>
-  <circle cx="552" cy="186" r="72" fill="#F8FAFC" fill-opacity="0.92"/>
-  <path d="M120 762C214 608 298 458 364 302C401 430 456 583 600 762" stroke="#E2E8F0" stroke-width="30" stroke-linecap="round"/>
-  <path d="M108 805H612" stroke="#93C5FD" stroke-width="18" stroke-linecap="round"/>
-  <text x="120" y="140" fill="#F8FAFC" font-family="Arial, sans-serif" font-size="56" font-weight="700">INTERSTELLAR</text>
-  <text x="120" y="860" fill="#BFDBFE" font-family="Arial, sans-serif" font-size="32">beyond the horizon</text>
-</svg>

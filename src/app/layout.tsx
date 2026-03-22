@@ -1,27 +1,37 @@
-import type { Metadata } from 'next'
-import { Geist } from 'next/font/google'
-import '@vkontakte/vkui/dist/vkui.css'
+﻿import type { Metadata, Viewport } from 'next'
+import { Manrope } from 'next/font/google'
+import type { ReactNode } from 'react'
 import { VkuiProvider } from '@/shared/providers/vkui-provider'
-import './globals.css'
+import '@vkontakte/vkui/dist/cssm/styles/themes.css'
+import '@/shared/styles'
 
-const geistSans = Geist({
-  variable: '--font-geist-sans',
+const fontManrope = Manrope({
+  variable: '--font-manrope',
   subsets: ['latin'],
+  weight: ['300', '400', '500', '600'],
+  display: 'swap',
 })
+
+export const viewport: Viewport = {
+  width: 'device-width',
+  initialScale: 1,
+  userScalable: false,
+  viewportFit: 'cover',
+}
 
 export const metadata: Metadata = {
   title: 'VK Movies',
-  description: 'Каталог фильмов на Next.js и VKUI',
+  description: 'Каталог фильмов на Next.js',
 }
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: Readonly<{
-  children: React.ReactNode
+  children: ReactNode
 }>) {
   return (
-    <html lang="ru" className={geistSans.variable}>
-      <body>
+    <html lang="ru" data-scroll-behavior="smooth">
+      <body className={fontManrope.variable}>
         <VkuiProvider>{children}</VkuiProvider>
       </body>
     </html>

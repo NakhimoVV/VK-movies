@@ -1,7 +1,7 @@
 <!-- BEGIN:nextjs-agent-rules -->
 # This is NOT the Next.js you know
 
-This version has breaking changes — APIs, conventions, and file structure may all differ from your training data. Read the relevant guide in `node_modules/next/dist/docs/` before writing any code. Heed deprecation notices.
+This version has breaking changes ï¿½ APIs, conventions, and file structure may all differ from your training data. Read the relevant guide in `node_modules/next/dist/docs/` before writing any code. Heed deprecation notices.
 <!-- END:nextjs-agent-rules -->
 
 # Project Rules for AI Agents
@@ -9,14 +9,15 @@ This version has breaking changes — APIs, conventions, and file structure may al
 ## Stack
 - Next.js App Router
 - TypeScript
+- SCSS Modules
 - VKUI
 - ESLint + Prettier
 
 ## Architecture
 - FSD
-- app/ — only routing/layout/page-level, composition business logic does not live in app/
-- shared/ — reusable ui/util/api
-- entities/, features/, widgets/ — strictly by responsibility
+- app/ ï¿½ only routing/layout/page-level, composition business logic does not live in app/
+- shared/ ï¿½ reusable ui/util/api
+- entities/, features/, widgets/ ï¿½ strictly by responsibility
 
 ## Rules
 - Use TypeScript strictly

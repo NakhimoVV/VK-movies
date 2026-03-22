@@ -1,0 +1,23 @@
+﻿.ratingView {
+  display: inline-flex;
+  align-items: center;
+  column-gap: 6px;
+}
+
+.stars {
+  display: inline-flex;
+  align-items: center;
+  column-gap: 2px;
+}
+
+.starFilled {
+  color: var(--color-red-50);
+}
+
+.starEmpty {
+  color: rgba(255, 255, 255, 0.18);
+}
+
+.label {
+  color: var(--color-grey-75);
+}
